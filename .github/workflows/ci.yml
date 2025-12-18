@@ -24,7 +24,7 @@ jobs:
           python-version: $ {{ matrix.python }}
 
       - name: upgrade pip 
-        uses: python -n pip install --upgrade pip setuptools wheel
+        uses: python -m pip install --upgrade pip setuptools wheel
 
       - name: install project dependencies
         uses: python -m pip install -r requirements.txt
